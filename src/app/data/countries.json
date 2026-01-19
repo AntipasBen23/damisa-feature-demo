@@ -1,0 +1,90 @@
+[
+  {
+    "id": "NG",
+    "name": "Nigeria",
+    "currency": "NGN",
+    "region": "West Africa",
+    "flag": "🇳🇬",
+    "status": "available",
+    "averageFees": 1.2,
+    "averageSettlementMinutes": 15,
+    "regulatoryTier": "medium"
+  },
+  {
+    "id": "KE",
+    "name": "Kenya",
+    "currency": "KES",
+    "region": "East Africa",
+    "flag": "🇰🇪",
+    "status": "available",
+    "averageFees": 1.5,
+    "averageSettlementMinutes": 20,
+    "regulatoryTier": "medium"
+  },
+  {
+    "id": "GH",
+    "name": "Ghana",
+    "currency": "GHS",
+    "region": "West Africa",
+    "flag": "🇬🇭",
+    "status": "launched",
+    "averageFees": 0.8,
+    "averageSettlementMinutes": 12,
+    "regulatoryTier": "low"
+  },
+  {
+    "id": "AE",
+    "name": "United Arab Emirates",
+    "currency": "AED",
+    "region": "Middle East",
+    "flag": "🇦🇪",
+    "status": "launched",
+    "averageFees": 0.6,
+    "averageSettlementMinutes": 10,
+    "regulatoryTier": "high"
+  },
+  {
+    "id": "PL",
+    "name": "Poland",
+    "currency": "PLN",
+    "region": "Europe",
+    "flag": "🇵🇱",
+    "status": "launched",
+    "averageFees": 0.5,
+    "averageSettlementMinutes": 8,
+    "regulatoryTier": "high"
+  },
+  {
+    "id": "ZA",
+    "name": "South Africa",
+    "currency": "ZAR",
+    "region": "Southern Africa",
+    "flag": "🇿🇦",
+    "status": "available",
+    "averageFees": 1.3,
+    "averageSettlementMinutes": 18,
+    "regulatoryTier": "medium"
+  },
+  {
+    "id": "BR",
+    "name": "Brazil",
+    "currency": "BRL",
+    "region": "Latin America",
+    "flag": "🇧🇷",
+    "status": "available",
+    "averageFees": 1.8,
+    "averageSettlementMinutes": 25,
+    "regulatoryTier": "high"
+  },
+  {
+    "id": "IN",
+    "name": "India",
+    "currency": "INR",
+    "region": "South Asia",
+    "flag": "🇮🇳",
+    "status": "available",
+    "averageFees": 1.1,
+    "averageSettlementMinutes": 15,
+    "regulatoryTier": "high"
+  }
+]
