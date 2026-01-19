@@ -1,0 +1,231 @@
+[
+  {
+    "country": "NG",
+    "countryName": "Nigeria",
+    "licenseRequired": "Virtual Asset Service Provider (VASP)",
+    "localLicenseNeeded": false,
+    "kycThreshold": 5000,
+    "kycThresholdCurrency": "USD",
+    "amlRequirements": [
+      "Customer Due Diligence (CDD) for all transactions",
+      "Enhanced Due Diligence (EDD) for transactions > $5,000",
+      "Suspicious Transaction Reports (STR) within 24 hours",
+      "Record keeping for 7 years"
+    ],
+    "transactionLimits": {
+      "daily": 50000,
+      "monthly": 200000,
+      "currency": "USD"
+    },
+    "reportingFrequency": "Monthly",
+    "reportingAuthority": "Central Bank of Nigeria (CBN)",
+    "sanctionsLists": ["OFAC", "UN", "EU", "Nigeria FIU"],
+    "dataResidency": "Not required",
+    "estimatedComplianceCost": "$15,000 - $25,000 annually",
+    "processingTime": "2-3 weeks",
+    "complexityLevel": "medium",
+    "notes": "Nigeria has clear crypto regulations. SEC oversees digital assets. No local license needed if operating from UK with VASP license."
+  },
+  {
+    "country": "KE",
+    "countryName": "Kenya",
+    "licenseRequired": "Payment Service Provider License",
+    "localLicenseNeeded": false,
+    "kycThreshold": 1000,
+    "kycThresholdCurrency": "USD",
+    "amlRequirements": [
+      "Customer identification for all accounts",
+      "Enhanced Due Diligence for transactions > $1,000",
+      "Suspicious Activity Reports within 48 hours",
+      "Transaction monitoring for unusual patterns",
+      "Record retention for 5 years"
+    ],
+    "transactionLimits": {
+      "daily": 10000,
+      "monthly": 50000,
+      "currency": "USD"
+    },
+    "reportingFrequency": "Monthly",
+    "reportingAuthority": "Central Bank of Kenya (CBK)",
+    "sanctionsLists": ["OFAC", "UN", "Kenya FRC"],
+    "dataResidency": "Preferred but not mandatory",
+    "estimatedComplianceCost": "$20,000 - $35,000 annually",
+    "processingTime": "3-4 weeks",
+    "complexityLevel": "medium",
+    "notes": "Kenya is crypto-friendly. CBK issued guidelines in 2024. Work with licensed partners like M-Pesa for easier compliance."
+  },
+  {
+    "country": "GH",
+    "countryName": "Ghana",
+    "licenseRequired": "VASP License (UK sufficient)",
+    "localLicenseNeeded": false,
+    "kycThreshold": 2000,
+    "kycThresholdCurrency": "USD",
+    "amlRequirements": [
+      "Customer identification mandatory",
+      "Source of funds verification for > $2,000",
+      "Ongoing monitoring of customer activity",
+      "STR filing within 48 hours",
+      "Record keeping for 6 years"
+    ],
+    "transactionLimits": {
+      "daily": 25000,
+      "monthly": 100000,
+      "currency": "USD"
+    },
+    "reportingFrequency": "Quarterly",
+    "reportingAuthority": "Bank of Ghana (BoG)",
+    "sanctionsLists": ["OFAC", "UN", "Ghana FIC"],
+    "dataResidency": "Not required",
+    "estimatedComplianceCost": "$12,000 - $20,000 annually",
+    "processingTime": "1-2 weeks",
+    "complexityLevel": "low",
+    "notes": "Ghana has progressive digital asset stance. Already launched corridor. Streamlined compliance process."
+  },
+  {
+    "country": "AE",
+    "countryName": "United Arab Emirates",
+    "licenseRequired": "VASP License",
+    "localLicenseNeeded": true,
+    "kycThreshold": 1000,
+    "kycThresholdCurrency": "USD",
+    "amlRequirements": [
+      "Enhanced KYC for all customers",
+      "Risk-based approach to CDD",
+      "Real-time transaction monitoring",
+      "Immediate STR reporting",
+      "Comprehensive audit trails",
+      "Record retention for 5 years minimum"
+    ],
+    "transactionLimits": {
+      "daily": 100000,
+      "monthly": 500000,
+      "currency": "USD"
+    },
+    "reportingFrequency": "Monthly",
+    "reportingAuthority": "UAE Central Bank & VARA (Dubai)",
+    "sanctionsLists": ["OFAC", "UN", "EU", "UAE FIU"],
+    "dataResidency": "Required for certain data types",
+    "estimatedComplianceCost": "$50,000 - $80,000 annually",
+    "processingTime": "4-6 weeks",
+    "complexityLevel": "high",
+    "notes": "UAE (especially Dubai) has robust crypto framework. VARA license recommended for Dubai operations. High compliance standards but clear guidelines."
+  },
+  {
+    "country": "PL",
+    "countryName": "Poland",
+    "licenseRequired": "EU VASP License (MiCA compliant)",
+    "localLicenseNeeded": false,
+    "kycThreshold": 1000,
+    "kycThresholdCurrency": "EUR",
+    "amlRequirements": [
+      "EU AML Directive compliance (5AMLD)",
+      "Customer identification and verification",
+      "Enhanced Due Diligence for high-risk customers",
+      "Transaction monitoring and reporting",
+      "Beneficial ownership identification",
+      "Record keeping for 5 years"
+    ],
+    "transactionLimits": {
+      "daily": 50000,
+      "monthly": 200000,
+      "currency": "EUR"
+    },
+    "reportingFrequency": "Monthly",
+    "reportingAuthority": "Polish Financial Supervision Authority (KNF)",
+    "sanctionsLists": ["EU", "OFAC", "UN"],
+    "dataResidency": "GDPR compliance mandatory",
+    "estimatedComplianceCost": "$30,000 - $50,000 annually",
+    "processingTime": "2-3 weeks",
+    "complexityLevel": "high",
+    "notes": "Poland follows EU MiCA regulations. Already launched corridor. Strong regulatory framework with clear guidelines."
+  },
+  {
+    "country": "ZA",
+    "countryName": "South Africa",
+    "licenseRequired": "Financial Service Provider (FSP) License",
+    "localLicenseNeeded": true,
+    "kycThreshold": 1000,
+    "kycThresholdCurrency": "USD",
+    "amlRequirements": [
+      "FICA compliance mandatory",
+      "Customer identification and verification",
+      "Risk assessment for all customers",
+      "Transaction monitoring",
+      "STR reporting within 15 days",
+      "Record retention for 5 years"
+    ],
+    "transactionLimits": {
+      "daily": 10000,
+      "monthly": 50000,
+      "currency": "USD"
+    },
+    "reportingFrequency": "Quarterly",
+    "reportingAuthority": "South African Reserve Bank (SARB) & FIC",
+    "sanctionsLists": ["OFAC", "UN", "South Africa FIC"],
+    "dataResidency": "Required",
+    "estimatedComplianceCost": "$25,000 - $40,000 annually",
+    "processingTime": "6-8 weeks",
+    "complexityLevel": "medium",
+    "notes": "South Africa has comprehensive crypto regulations. FSP license process can be lengthy. Partner with licensed entities for faster market entry."
+  },
+  {
+    "country": "BR",
+    "countryName": "Brazil",
+    "licenseRequired": "Payment Institution License",
+    "localLicenseNeeded": true,
+    "kycThreshold": 1000,
+    "kycThresholdCurrency": "USD",
+    "amlRequirements": [
+      "Brazilian Central Bank KYC standards",
+      "CPF/CNPJ verification mandatory",
+      "Enhanced due diligence for PEPs",
+      "Real-time transaction monitoring",
+      "COAF reporting for suspicious activities",
+      "Record keeping for 10 years"
+    ],
+    "transactionLimits": {
+      "daily": 50000,
+      "monthly": 200000,
+      "currency": "BRL"
+    },
+    "reportingFrequency": "Monthly",
+    "reportingAuthority": "Central Bank of Brazil (BCB)",
+    "sanctionsLists": ["OFAC", "UN", "COAF"],
+    "dataResidency": "Strictly required (LGPD compliance)",
+    "estimatedComplianceCost": "$60,000 - $100,000 annually",
+    "processingTime": "8-12 weeks",
+    "complexityLevel": "high",
+    "notes": "Brazil has strict financial regulations. PIX integration is essential for success. Local presence recommended. High setup costs but large market opportunity."
+  },
+  {
+    "country": "IN",
+    "countryName": "India",
+    "licenseRequired": "Payment Aggregator License",
+    "localLicenseNeeded": true,
+    "kycThreshold": 500,
+    "kycThresholdCurrency": "USD",
+    "amlRequirements": [
+      "RBI KYC guidelines compliance",
+      "Aadhaar/PAN verification",
+      "Video KYC for remote onboarding",
+      "Transaction monitoring and alerts",
+      "FIU reporting for suspicious transactions",
+      "Comprehensive audit trails",
+      "Record retention for 5 years"
+    ],
+    "transactionLimits": {
+      "daily": 5000,
+      "monthly": 25000,
+      "currency": "USD"
+    },
+    "reportingFrequency": "Monthly",
+    "reportingAuthority": "Reserve Bank of India (RBI)",
+    "sanctionsLists": ["OFAC", "UN", "India FIU"],
+    "dataResidency": "Strictly required",
+    "estimatedComplianceCost": "$40,000 - $70,000 annually",
+    "processingTime": "10-16 weeks",
+    "complexityLevel": "high",
+    "notes": "India has evolving crypto regulations. RBI cautious but open to innovation. UPI integration is key. Local partnerships essential for compliance."
+  }
+]
