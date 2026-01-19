@@ -1,0 +1,498 @@
+[
+  {
+    "country": "NG",
+    "countryName": "Nigeria",
+    "templateName": "Nigeria Standard Compliance",
+    "version": "1.0",
+    "kycRules": {
+      "tier1": {
+        "limit": 1000,
+        "requirements": ["Email verification", "Phone number"],
+        "documents": []
+      },
+      "tier2": {
+        "limit": 5000,
+        "requirements": ["Full name", "Date of birth", "Address"],
+        "documents": ["Government ID", "Proof of address"]
+      },
+      "tier3": {
+        "limit": 50000,
+        "requirements": ["Enhanced due diligence", "Source of funds"],
+        "documents": ["Government ID", "Proof of address", "Bank statement", "Utility bill"]
+      }
+    },
+    "amlRules": {
+      "transactionMonitoring": {
+        "enabled": true,
+        "thresholds": {
+          "singleTransaction": 5000,
+          "dailyVolume": 10000,
+          "monthlyVolume": 50000
+        },
+        "alerts": ["Rapid transaction sequences", "Round number patterns", "Unusual geographic activity"]
+      },
+      "sanctionsScreening": {
+        "enabled": true,
+        "lists": ["OFAC", "UN", "EU", "Nigeria FIU"],
+        "screeningFrequency": "Real-time"
+      },
+      "strReporting": {
+        "enabled": true,
+        "reportingTimeframe": "24 hours",
+        "authority": "Nigeria Financial Intelligence Unit (NFIU)"
+      }
+    },
+    "riskScoring": {
+      "lowRisk": {
+        "criteria": ["Verified identity", "Consistent transaction patterns", "Low volume"],
+        "monitoring": "Standard"
+      },
+      "mediumRisk": {
+        "criteria": ["New customer", "Moderate volume", "Multiple countries"],
+        "monitoring": "Enhanced"
+      },
+      "highRisk": {
+        "criteria": ["PEP", "High volume", "High-risk countries", "Unusual patterns"],
+        "monitoring": "Continuous"
+      }
+    },
+    "recordKeeping": {
+      "retentionPeriod": "7 years",
+      "dataTypes": ["Customer information", "Transaction records", "Risk assessments", "Compliance reports"]
+    }
+  },
+  {
+    "country": "KE",
+    "countryName": "Kenya",
+    "templateName": "Kenya Standard Compliance",
+    "version": "1.0",
+    "kycRules": {
+      "tier1": {
+        "limit": 500,
+        "requirements": ["Phone number (M-Pesa linked)", "Name"],
+        "documents": []
+      },
+      "tier2": {
+        "limit": 1000,
+        "requirements": ["Full name", "ID number", "Address"],
+        "documents": ["National ID or Passport"]
+      },
+      "tier3": {
+        "limit": 10000,
+        "requirements": ["Enhanced verification", "Source of wealth"],
+        "documents": ["National ID", "Proof of address", "Bank reference", "Tax PIN"]
+      }
+    },
+    "amlRules": {
+      "transactionMonitoring": {
+        "enabled": true,
+        "thresholds": {
+          "singleTransaction": 1000,
+          "dailyVolume": 5000,
+          "monthlyVolume": 20000
+        },
+        "alerts": ["Smurfing patterns", "Velocity changes", "Cross-border anomalies"]
+      },
+      "sanctionsScreening": {
+        "enabled": true,
+        "lists": ["OFAC", "UN", "Kenya FRC"],
+        "screeningFrequency": "Real-time"
+      },
+      "strReporting": {
+        "enabled": true,
+        "reportingTimeframe": "48 hours",
+        "authority": "Financial Reporting Centre (FRC)"
+      }
+    },
+    "riskScoring": {
+      "lowRisk": {
+        "criteria": ["M-Pesa verified", "Consistent patterns", "Local transactions only"],
+        "monitoring": "Standard"
+      },
+      "mediumRisk": {
+        "criteria": ["International transfers", "Moderate volume"],
+        "monitoring": "Enhanced"
+      },
+      "highRisk": {
+        "criteria": ["PEP", "High-risk jurisdictions", "Cash-intensive business"],
+        "monitoring": "Continuous"
+      }
+    },
+    "recordKeeping": {
+      "retentionPeriod": "5 years",
+      "dataTypes": ["Customer data", "Transaction logs", "Due diligence records", "STR filings"]
+    }
+  },
+  {
+    "country": "GH",
+    "countryName": "Ghana",
+    "templateName": "Ghana Standard Compliance",
+    "version": "1.0",
+    "kycRules": {
+      "tier1": {
+        "limit": 1000,
+        "requirements": ["Name", "Phone number"],
+        "documents": []
+      },
+      "tier2": {
+        "limit": 2000,
+        "requirements": ["Full name", "Ghana Card number", "Address"],
+        "documents": ["Ghana Card or Passport"]
+      },
+      "tier3": {
+        "limit": 25000,
+        "requirements": ["Enhanced verification", "Business documentation"],
+        "documents": ["Ghana Card", "Proof of address", "TIN certificate", "Business registration (if applicable)"]
+      }
+    },
+    "amlRules": {
+      "transactionMonitoring": {
+        "enabled": true,
+        "thresholds": {
+          "singleTransaction": 2000,
+          "dailyVolume": 10000,
+          "monthlyVolume": 50000
+        },
+        "alerts": ["Structuring", "Geographic inconsistencies", "Sudden volume spikes"]
+      },
+      "sanctionsScreening": {
+        "enabled": true,
+        "lists": ["OFAC", "UN", "Ghana FIC"],
+        "screeningFrequency": "Real-time"
+      },
+      "strReporting": {
+        "enabled": true,
+        "reportingTimeframe": "48 hours",
+        "authority": "Financial Intelligence Centre (FIC)"
+      }
+    },
+    "riskScoring": {
+      "lowRisk": {
+        "criteria": ["Ghana Card verified", "Stable transaction patterns"],
+        "monitoring": "Standard"
+      },
+      "mediumRisk": {
+        "criteria": ["Cross-border activity", "Business accounts"],
+        "monitoring": "Enhanced"
+      },
+      "highRisk": {
+        "criteria": ["PEP", "High volume", "Mining/gold sector"],
+        "monitoring": "Continuous"
+      }
+    },
+    "recordKeeping": {
+      "retentionPeriod": "6 years",
+      "dataTypes": ["Identity records", "Transaction history", "Risk assessments", "Compliance filings"]
+    }
+  },
+  {
+    "country": "AE",
+    "countryName": "United Arab Emirates",
+    "templateName": "UAE Premium Compliance",
+    "version": "1.0",
+    "kycRules": {
+      "tier1": {
+        "limit": 500,
+        "requirements": ["Emirates ID", "Phone number", "Email"],
+        "documents": ["Emirates ID scan"]
+      },
+      "tier2": {
+        "limit": 1000,
+        "requirements": ["Full verification", "Residence proof"],
+        "documents": ["Emirates ID", "Residence visa", "Proof of address"]
+      },
+      "tier3": {
+        "limit": 100000,
+        "requirements": ["Enhanced due diligence", "Source of wealth verification"],
+        "documents": ["Emirates ID", "Passport", "Proof of address", "Bank statements (6 months)", "Source of wealth declaration"]
+      }
+    },
+    "amlRules": {
+      "transactionMonitoring": {
+        "enabled": true,
+        "thresholds": {
+          "singleTransaction": 1000,
+          "dailyVolume": 50000,
+          "monthlyVolume": 200000
+        },
+        "alerts": ["High-frequency trading", "Layering patterns", "Multiple jurisdiction flows"]
+      },
+      "sanctionsScreening": {
+        "enabled": true,
+        "lists": ["OFAC", "UN", "EU", "UAE FIU", "FATF"],
+        "screeningFrequency": "Real-time + Daily batch"
+      },
+      "strReporting": {
+        "enabled": true,
+        "reportingTimeframe": "Immediate (within hours)",
+        "authority": "UAE Financial Intelligence Unit & VARA"
+      }
+    },
+    "riskScoring": {
+      "lowRisk": {
+        "criteria": ["UAE national", "Verified Emirates ID", "Salary account linked"],
+        "monitoring": "Standard"
+      },
+      "mediumRisk": {
+        "criteria": ["Expatriate resident", "Business owner", "Moderate volume"],
+        "monitoring": "Enhanced"
+      },
+      "highRisk": {
+        "criteria": ["PEP", "Cash-intensive business", "High-risk jurisdictions", "Precious metals/gems trade"],
+        "monitoring": "Continuous + Manual review"
+      }
+    },
+    "recordKeeping": {
+      "retentionPeriod": "5 years minimum (10 years recommended)",
+      "dataTypes": ["All customer data", "Transaction records", "Due diligence files", "Communication logs", "Risk assessments"]
+    }
+  },
+  {
+    "country": "PL",
+    "countryName": "Poland",
+    "templateName": "Poland EU MiCA Compliance",
+    "version": "1.0",
+    "kycRules": {
+      "tier1": {
+        "limit": 1000,
+        "requirements": ["Full name", "Email", "PESEL or tax ID"],
+        "documents": ["ID card or Passport"]
+      },
+      "tier2": {
+        "limit": 15000,
+        "requirements": ["Address verification", "Source of funds"],
+        "documents": ["ID card/Passport", "Proof of address", "Bank statement"]
+      },
+      "tier3": {
+        "limit": 50000,
+        "requirements": ["Enhanced due diligence", "Beneficial ownership"],
+        "documents": ["ID documents", "Proof of address", "Tax returns", "Company registration (if business)"]
+      }
+    },
+    "amlRules": {
+      "transactionMonitoring": {
+        "enabled": true,
+        "thresholds": {
+          "singleTransaction": 1000,
+          "dailyVolume": 15000,
+          "monthlyVolume": 100000
+        },
+        "alerts": ["Unusual patterns per EU 5AMLD", "Cross-border anomalies", "Politically exposed persons"]
+      },
+      "sanctionsScreening": {
+        "enabled": true,
+        "lists": ["EU Consolidated List", "OFAC", "UN", "Polish sanctions"],
+        "screeningFrequency": "Real-time"
+      },
+      "strReporting": {
+        "enabled": true,
+        "reportingTimeframe": "48 hours",
+        "authority": "General Inspector of Financial Information (GIIF)"
+      }
+    },
+    "riskScoring": {
+      "lowRisk": {
+        "criteria": ["EU citizen", "Verified PESEL", "Consistent local activity"],
+        "monitoring": "Standard"
+      },
+      "mediumRisk": {
+        "criteria": ["Non-EU national", "Business account", "Cross-border transfers"],
+        "monitoring": "Enhanced"
+      },
+      "highRisk": {
+        "criteria": ["PEP", "High-risk third countries", "Cash-intensive sectors"],
+        "monitoring": "Continuous + Compliance officer review"
+      }
+    },
+    "recordKeeping": {
+      "retentionPeriod": "5 years (GDPR compliant)",
+      "dataTypes": ["Customer identification", "Transaction data", "Risk assessments", "Due diligence documentation"]
+    }
+  },
+  {
+    "country": "ZA",
+    "countryName": "South Africa",
+    "templateName": "South Africa FICA Compliance",
+    "version": "1.0",
+    "kycRules": {
+      "tier1": {
+        "limit": 500,
+        "requirements": ["Full name", "ID number", "Contact details"],
+        "documents": ["South African ID or Passport"]
+      },
+      "tier2": {
+        "limit": 1000,
+        "requirements": ["Address verification", "Proof of income"],
+        "documents": ["ID document", "Proof of address", "Bank statement"]
+      },
+      "tier3": {
+        "limit": 10000,
+        "requirements": ["Enhanced FICA verification", "Tax compliance status"],
+        "documents": ["ID/Passport", "Proof of address", "Bank statements (3 months)", "Tax clearance certificate"]
+      }
+    },
+    "amlRules": {
+      "transactionMonitoring": {
+        "enabled": true,
+        "thresholds": {
+          "singleTransaction": 1000,
+          "dailyVolume": 5000,
+          "monthlyVolume": 25000
+        },
+        "alerts": ["FICA threshold breaches", "Unusual cash equivalents", "High-risk country transactions"]
+      },
+      "sanctionsScreening": {
+        "enabled": true,
+        "lists": ["OFAC", "UN", "FIC South Africa"],
+        "screeningFrequency": "Real-time"
+      },
+      "strReporting": {
+        "enabled": true,
+        "reportingTimeframe": "15 days",
+        "authority": "Financial Intelligence Centre (FIC)"
+      }
+    },
+    "riskScoring": {
+      "lowRisk": {
+        "criteria": ["SA ID verified", "Salaried employee", "Local transactions"],
+        "monitoring": "Standard"
+      },
+      "mediumRisk": {
+        "criteria": ["Self-employed", "Foreign nationals", "Cross-border flows"],
+        "monitoring": "Enhanced"
+      },
+      "highRisk": {
+        "criteria": ["PEP", "Cash businesses", "Precious metals trade", "High-risk sectors"],
+        "monitoring": "Continuous + FICA officer review"
+      }
+    },
+    "recordKeeping": {
+      "retentionPeriod": "5 years post-closure",
+      "dataTypes": ["FICA documents", "Transaction records", "Risk ratings", "STR submissions"]
+    }
+  },
+  {
+    "country": "BR",
+    "countryName": "Brazil",
+    "templateName": "Brazil Central Bank Compliance",
+    "version": "1.0",
+    "kycRules": {
+      "tier1": {
+        "limit": 500,
+        "requirements": ["CPF", "Full name", "Phone number"],
+        "documents": ["CPF registration"]
+      },
+      "tier2": {
+        "limit": 1000,
+        "requirements": ["CPF verification", "Address", "Email"],
+        "documents": ["CPF", "RG or CNH", "Proof of address"]
+      },
+      "tier3": {
+        "limit": 50000,
+        "requirements": ["Enhanced verification", "Income proof", "Tax compliance"],
+        "documents": ["CPF", "RG/CNH", "Proof of address", "Income statement", "Tax returns"]
+      }
+    },
+    "amlRules": {
+      "transactionMonitoring": {
+        "enabled": true,
+        "thresholds": {
+          "singleTransaction": 1000,
+          "dailyVolume": 10000,
+          "monthlyVolume": 50000
+        },
+        "alerts": ["PIX unusual patterns", "Cross-border irregularities", "COAF risk indicators"]
+      },
+      "sanctionsScreening": {
+        "enabled": true,
+        "lists": ["OFAC", "UN", "COAF Brazil"],
+        "screeningFrequency": "Real-time"
+      },
+      "strReporting": {
+        "enabled": true,
+        "reportingTimeframe": "24 hours",
+        "authority": "COAF (Financial Activities Control Council)"
+      }
+    },
+    "riskScoring": {
+      "lowRisk": {
+        "criteria": ["CPF verified", "Salaried worker", "PIX linked"],
+        "monitoring": "Standard"
+      },
+      "mediumRisk": {
+        "criteria": ["Business owner", "International transfers", "CNPJ accounts"],
+        "monitoring": "Enhanced"
+      },
+      "highRisk": {
+        "criteria": ["PEP", "High-value transactions", "Cash-intensive operations"],
+        "monitoring": "Continuous + Compliance review"
+      }
+    },
+    "recordKeeping": {
+      "retentionPeriod": "10 years",
+      "dataTypes": ["CPF/CNPJ records", "All transaction data", "Due diligence files", "COAF reports", "LGPD consent records"]
+    }
+  },
+  {
+    "country": "IN",
+    "countryName": "India",
+    "templateName": "India RBI Compliance",
+    "version": "1.0",
+    "kycRules": {
+      "tier1": {
+        "limit": 200,
+        "requirements": ["Aadhaar or PAN", "Phone number"],
+        "documents": ["Aadhaar card or PAN card"]
+      },
+      "tier2": {
+        "limit": 500,
+        "requirements": ["Full KYC", "Address verification"],
+        "documents": ["Aadhaar", "PAN card", "Address proof"]
+      },
+      "tier3": {
+        "limit": 5000,
+        "requirements": ["Enhanced KYC", "Video verification", "Income proof"],
+        "documents": ["Aadhaar", "PAN", "Address proof", "Bank statement", "ITR (if applicable)"]
+      }
+    },
+    "amlRules": {
+      "transactionMonitoring": {
+        "enabled": true,
+        "thresholds": {
+          "singleTransaction": 500,
+          "dailyVolume": 2000,
+          "monthlyVolume": 10000
+        },
+        "alerts": ["UPI unusual patterns", "Layering via multiple accounts", "Cross-border crypto flows"]
+      },
+      "sanctionsScreening": {
+        "enabled": true,
+        "lists": ["OFAC", "UN", "India FIU"],
+        "screeningFrequency": "Real-time"
+      },
+      "strReporting": {
+        "enabled": true,
+        "reportingTimeframe": "7 days",
+        "authority": "Financial Intelligence Unit (FIU-IND)"
+      }
+    },
+    "riskScoring": {
+      "lowRisk": {
+        "criteria": ["Aadhaar verified", "Bank account linked", "UPI active"],
+        "monitoring": "Standard"
+      },
+      "mediumRisk": {
+        "criteria": ["New customer", "Moderate volume", "Business account"],
+        "monitoring": "Enhanced"
+      },
+      "highRisk": {
+        "criteria": ["PEP", "High-value crypto", "Cash deposits", "Hawala indicators"],
+        "monitoring": "Continuous + Manual review"
+      }
+    },
+    "recordKeeping": {
+      "retentionPeriod": "5 years",
+      "dataTypes": ["Aadhaar/PAN records", "Video KYC footage", "Transaction logs", "Risk assessments", "FIU submissions"]
+    }
+  }
+]
