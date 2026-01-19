@@ -6,7 +6,7 @@ import { Search, ArrowRight, CheckCircle2, Globe2 } from 'lucide-react';
 import countriesData from '../data/countries.json';
 import type { Country } from '../types';
 
-const countries: Country[] = countriesData;
+const countries = countriesData as Country[];
 
 export default function Dashboard() {
   const router = useRouter();
